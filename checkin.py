@@ -47,9 +47,10 @@ if __name__ == '__main__':
                 # 获取签到结果
                 check_result = result.get('message')
                 points = result.get('points')
-
+                print(check_result)
                 # 获取账号当前状态
                 result = state.json()
+                print(result)
                 # 获取剩余时间
                 leftdays = 0##int(float(result['data']['leftDays']))
                 # 获取账号email
